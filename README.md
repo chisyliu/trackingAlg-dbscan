@@ -11,6 +11,9 @@ of the 2nd International Conference on Knowledge
 Discovery and Data Mining, Portland, OR, AAAI
 Press, pp. 226 - 231. 1996
 
+Take a look at the test in the source code for a
+working example.
+
 **Code Example**
 
 ```python
@@ -20,7 +23,7 @@ results = dbs.run()
 
 To run the included example:
 >> import dbscan
->> dbscan.test("iris.data")
+>> dbscan.test("sample/iris.data")
 ```
 
 ## Motivation
