@@ -32,59 +32,59 @@ useful for some folks studying the algorithm.
 
 ## Usage
 
-```python
-# Parameters
-# ----------
-#
-#        D: list of tuples
-#            stores points as a list of tuples
-#            of the form (<string id>, <float x>, <float y>)
-#
-#            E.g. D = [('001', 0.5, 2.1), ('002', 1.0, 2.4)]
-#
-#            Point ids don't have to be unique.
-#
-#        eps: float
-#            maximum distance for two points to be
-#            considered the same neighborhood
-#
-#            E.g. 0.001
-#
-#        minPts: int
-#            Minimum number of points in a neighborhood for
-#            a point to be considered a core point. This
-#            includes the point itself.
-#
-#            E.g. 4
-#
-#
-#       Returns
-#       -------
-#
-#       A tuple of a list of Cluster objects and a list of
-#       noise, e.i. ([<list clusters>, <list noise pts>])
-#
-#
-#       Methods
-#       -------
-#
-#       printClusters() - handy method for printing results
-#       run()           - run DBSCAN
-#
-#       Example Usage
-#       -------------
-#
-#       import dbscan
-#
-#       dbs = DBSCAN(D, 0.001, 4)
-#       clusters = dbs.scan()
-#
-#       # Print with printClusters
-#       dbs.printClusters()
-#
-#       # Print with iteration
-#       for cluster in clusters:
-#           print(cluster.cid, cluster.pts)
+```
+        Parameters
+        ----------
+
+        D: list of tuples
+            stores points as a list of tuples
+            of the form (<string id>, <float x>, <float y>)
+
+            E.g. D = [('001', 0.5, 2.1), ('002', 1.0, 2.4)]
+
+            Point ids don't have to be unique.
+
+        eps: float
+            maximum distance for two points to be
+            considered the same neighborhood
+
+            E.g. 0.001
+
+        minPts: int
+            Minimum number of points in a neighborhood for
+            a point to be considered a core point. This
+            includes the point itself.
+
+            E.g. 4
+
+
+        Returns
+        -------
+
+        A tuple of a list of Cluster objects and a list of
+        noise, e.i. ([<list clusters>, <list noise pts>])
+
+
+        Methods
+        -------
+
+        printClusters() - handy method for printing results
+        run()           - run DBSCAN
+
+        Example Usage
+        -------------
+
+        import dbscan
+
+        dbs = DBSCAN(D, 0.001, 4)
+        clusters = dbs.scan()
+
+        # Print with printClusters
+        dbs.printClusters()
+
+        # Print with iteration
+        for cluster in clusters:
+            print(cluster.cid, cluster.pts)
 ```
 
 ## Test
